@@ -11,7 +11,7 @@ Hotel Website HTML5 and CSS3 project
 
 ## Introduction
 
-*Brad Traversy's Hotel website project. In this project I showcase some basic CSS and HTML to create and style a website, I will visually copy and recreate the existing project from Brad Traversy's course, but will use my own initiative and knowledge to complete the project.*
+*Brad Traversy's Hotel website project. In this project I showcase some basic CSS and HTML to create and style a static website that is non-responsive, I will visually copy and recreate the existing project from Brad Traversy's course, but will use my own initiative and knowledge to complete the project.*
 
 ## Technologies
 
@@ -31,3 +31,5 @@ Development started on 28/03/2021
 ## Sources
 
 [Modern HTML & CSS From The Beginning (Including Sass) By Brad Traversy](https://www.udemy.com/course/modern-html-css-from-the-beginning/?referralCode=EB0470C43F3C3E9AA306)
+
+[Font Awesome](https://fontawesome.com/)
