@@ -1,0 +1,93 @@
+/* 
+    Colors used for site
+
+    dark grey - #333
+    lighter grey - #444
+    very light grey - #f4f4f4
+    white - #fff
+    light orange - #f7c08a
+
+*/
+
+
+/* Create CSS reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and line height */
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+/* Style Navbar */
+/* Rectify padding issue by adding overflow to container */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+/* Create viewport container */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Remove links styles and set font color */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Float links to right and remove bullet points */
+
+.navbar ul {
+    float: right;
+    list-style: none;
+}
+
+/* Set links to inline block element so they are inline */
+
+.navbar ul li {
+    display: inline-block;
+}
+
+/* Set padding for navbar and set a tags to block elements for hover effect */
+/* Note - setting padding for link element causes overflow problem, container set to overflow */
+
+.navbar ul li a {
+    display: block;
+    padding: 20px;
+}
+
+/* Style Navbar logo */
+
+.navbar .logo {
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* Create hover effect for links */
+
+.navbar ul li a:hover {
+    background-color: #444;
+    color: #f7c08a;
+}
+
+/* Create active effect for link */
+
+.navbar ul li .current {
+    background-color: #444;
+    color: #f7c08a;
+}
