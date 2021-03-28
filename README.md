@@ -17,8 +17,8 @@ Hotel Website HTML5 and CSS3 project
 
 * HTML5
 * CSS3 includes:
-..* Basic CSS3
-..* Floats will be used for layout (No Flexbox or Grid will be used for this project)
+  - Basic CSS3
+  - Floats will be used for layout (No Flexbox or Grid will be used for this project)
 
 ## Launch
 
