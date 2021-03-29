@@ -9,29 +9,25 @@
 
 */
 
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
 
+/* CSS utilities (this will be applied via classes or used generally) 
+    - Includes: Reset padding and margins for all elements
+                Viewport container
+                html and body font family and line height
+                a elements reset decorations, set white font and center
+                Clear class to clear floats
+                Float left and right
+                Orange text and background classes */
+
+/* ------------------------------------------------------------------ */
 /* Create CSS reset */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-/* Set font family and line height */
-
-html, body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7em;
-}
-
-/* Style Navbar */
-/* Rectify padding issue by adding overflow to container */
-
-.navbar {
-    background-color: #333;
-    color: #fff;
-    overflow: auto;
 }
 
 /* Create viewport container */
@@ -41,12 +37,65 @@ html, body {
     margin: auto;
 }
 
+/* Set font family and line height */
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
 /* Remove links styles and set font color */
 
 a {
     color: #fff;
     text-decoration: none;
     text-align: center;
+}
+
+/* Floats are causing bottom elements to spill into space, use div to clear both floats */
+
+.clr {
+    clear: both;
+}
+
+/* Create utility class to float boxes on index page*/
+
+.flt-l {
+    float: left;
+}
+
+.flt-r {
+    float: right;
+}
+
+/* Utility Class for orange colour */
+
+.or-txt {
+    color: #f7c08a;
+}
+
+.or-bgnd {
+    background: #f7c08a;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+/* Common Elements 
+   - Including: Navbar
+                Footer 
+                3 Floated boxes on index and contact page
+                Buttons */
+
+/* ------------------------------------------------------------------ */
+
+/* Style Navbar 
+   - Rectify padding issue by adding overflow to container */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: auto;
 }
 
 /* Float links to right and remove bullet points */
@@ -95,6 +144,8 @@ a {
     color: #f7c08a;
 }
 
+/* ------------------------------------------------------------------ */
+
 /* Create Footer */
 
 footer {
@@ -104,110 +155,17 @@ footer {
     text-align: center;
 }
 
-/* Insert and style images */
+/* ------------------------------------------------------------------ */
 
-/* Style index image main */
-
-.showcase {
-    background: url(/img/showcase.jpg) center/cover;
-    height: 600px;
-}
-
-/* Style history image and set container height */
-/* Set width of img container to 50% of container and float to left */
-
-.history-img {
-    background: url(/img/photo-1.jpg) center/cover;
-    float: left;
-    height: 400px;
-    width: 50%;
-}
-
-/* Style About Images */
-
-/* About Image on site is responsive thus percentage should be used in relation to container and set image to block level element */
-
-.about .about-right img {
-    border-radius: 50%;
-    display: block;
-    width: 70%;
-}
-
-/* Testimonials section background image */
-
-.testimonials {
-    height: 600px;
-    background: url(/img/test-bg.jpg) center/cover;
-}
-
-/* Testimonial image to be rounded and set to a static size as they are a set height */
-/* Set testimonial image floats */
-
-.testimonials .testimonial img {
-    border-radius: 50%;
-    float: left;
-    width: 100px;
-}
-
-/* Set floats and overflows and container sizes */
-
-.history-main {
-    height: 400px;
-    width: 100%;
-}
-
-/* Set history-text div to 50% and float to right */
-/* Set height so background fills entire container */
-
-.history-text {
-    background: #333;
-    color: #fff;
-    float: right;
-    height: 100%;
-    width: 50%;
-}
-
-/* Floats are causing bottom elements to spill into space, use div to clear both floats */
-
-.clr {
-    clear: both;
-}
-
-/* Set info block sizes and heights and float them */
+/* Set info-container block sizes and heights and float them */
 /* Center text */
 
-.info {
+.info-container {
     text-align: center;
     width: 33.333%;
 }
 
-/* Create utility class to float boxes on index page*/
-
-.flt-l {
-    float: left;
-}
-
-.flt-r {
-    float: right;
-}
-
-/* Set About floats and widths */
-
-.about-left {
-    float: left;
-    width: 50%;
-}
-
-.about-right {
-    float: right;
-    width: 50%;
-}
-
-/* Set Contact info widths */
-
-.contact {
-    width: 33.333%;
-}
+/* ------------------------------------------------------------------ */
 
 /* Create btn classes */
 /* Set display to inline block for the hover effect */
@@ -233,15 +191,88 @@ footer {
     color: #333;
 }
 
-/* Utility Class for orange colour */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
 
-.or-txt {
-    color: #f7c08a;
+/* Index page styling and content */
+
+/* ------------------------------------------------------------------ */
+
+/* Style index image main */
+
+.showcase {
+    background: url(/img/showcase.jpg) center/cover;
+    height: 600px;
 }
 
-.or-bgnd {
-    background: #f7c08a;
+/* Center heading and paragraph and center content */
+
+.showcase .container {
+    padding-top: 170px;
+    text-align: center;
 }
+
+/* Set heading sizing and line height */
+
+.showcase .container h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+} 
+
+/* Style history image and set container height */
+/* Set width of img container to 50% of container and float to left */
+
+.history-img {
+    background: url(/img/photo-1.jpg) center/cover;
+    float: left;
+    height: 400px;
+    width: 50%;
+}
+
+/* Set floats and overflows and container sizes */
+
+.history-main {
+    height: 400px;
+    width: 100%;
+}
+
+/* Set history-text div to 50% and float to right */
+/* Set height so background fills entire container */
+
+.history-text {
+    background: #333;
+    color: #fff;
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+/* Style About page */
+
+/* ------------------------------------------------------------------ */
+
+
+/* Style About Images */
+
+/* About Image on site is responsive thus percentage should be used in relation to container and set image to block level element */
+
+.about .about-right img {
+    border-radius: 50%;
+    display: block;
+    width: 70%;
+}
+
+/* Testimonials section background image */
+
+.testimonials {
+    height: 600px;
+    background: url(/img/test-bg.jpg) center/cover;
+}
+
+/* Testimonial info box styling */
 
 .testimonial {
     background: #f7c08a;
@@ -249,12 +280,26 @@ footer {
     opacity: 0.9;
 }
 
-.showcase .container {
-    padding-top: 170px;
-    text-align: center;
+/* Testimonial image to be rounded and set to a static size as they are a set height */
+/* Set testimonial image floats */
+
+.testimonials .testimonial img {
+    border-radius: 50%;
+    float: left;
+    width: 100px;
 }
 
-.showcase .container h1 {
-    font-size: 60px;
-    line-height: 1.2em;
-} 
+/* Set About floats and widths */
+
+.about-left {
+    float: left;
+    width: 50%;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
