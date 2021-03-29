@@ -235,3 +235,13 @@ footer {
 .or-txt {
     color: #f7c08a;
 }
+
+.or-bgnd {
+    background: #f7c08a;
+}
+
+.testimonial {
+    background: #f7c08a;
+    border-radius: 5px;
+    opacity: 0.9;
+}
