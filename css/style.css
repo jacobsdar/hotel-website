@@ -111,10 +111,13 @@ footer {
 }
 
 /* Style history image and set container height */
+/* Set width of img container to 50% of container and float to left */
 
 .history-img {
     background: url(/img/photo-1.jpg) center/cover;
+    float: left;
     height: 400px;
+    width: 50%;
 }
 
 /* Style About Images */
@@ -139,4 +142,39 @@ footer {
 .testimonials .testimonial img {
     border-radius: 50%;
     width: 100px;
+}
+
+/* Set floats and overflows and container sizes */
+
+.history-main {
+    width: 100%;
+}
+
+/* Set history-text div to 50% and float to right */
+
+.history-text {
+    float: right;
+    width: 50%;
+}
+
+/* Floats are causing bottom elements to spill into space, use div to clear both floats */
+
+.clr {
+    clear: both;
+}
+
+/* Set info block sizes and heights and float them */
+
+.info {
+    width: 33.3%;
+}
+
+/* Create utility class to float boxes */
+
+.flt-l {
+    float: left;
+}
+
+.flt-r {
+    float: right;
 }
