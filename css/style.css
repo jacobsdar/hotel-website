@@ -149,13 +149,18 @@ footer {
 /* Set floats and overflows and container sizes */
 
 .history-main {
+    height: 400px;
     width: 100%;
 }
 
 /* Set history-text div to 50% and float to right */
+/* Set height so background fills entire container */
 
 .history-text {
+    background: #333;
+    color: #fff;
     float: right;
+    height: 100%;
     width: 50%;
 }
 
@@ -166,9 +171,11 @@ footer {
 }
 
 /* Set info block sizes and heights and float them */
+/* Center text */
 
 .info {
-    width: 33.3%;
+    text-align: center;
+    width: 33.333%;
 }
 
 /* Create utility class to float boxes on index page*/
@@ -221,4 +228,10 @@ footer {
 .btn:hover {
     background: #f7c08a;
     color: #333;
+}
+
+/* Utility Class for orange colour */
+
+.or-txt {
+    color: #f7c08a;
 }
