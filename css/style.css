@@ -198,3 +198,27 @@ footer {
 .contact {
     width: 33.333%;
 }
+
+/* Create btn classes */
+/* Set display to inline block for the hover effect */
+
+.btn {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Create button hover effect */
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
