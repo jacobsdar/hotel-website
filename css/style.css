@@ -138,9 +138,11 @@ footer {
 }
 
 /* Testimonial image to be rounded and set to a static size as they are a set height */
+/* Set testimonial image floats */
 
 .testimonials .testimonial img {
     border-radius: 50%;
+    float: left;
     width: 100px;
 }
 
@@ -169,7 +171,7 @@ footer {
     width: 33.3%;
 }
 
-/* Create utility class to float boxes */
+/* Create utility class to float boxes on index page*/
 
 .flt-l {
     float: left;
@@ -177,4 +179,22 @@ footer {
 
 .flt-r {
     float: right;
+}
+
+/* Set About floats and widths */
+
+.about-left {
+    float: left;
+    width: 50%;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+}
+
+/* Set Contact info widths */
+
+.contact {
+    width: 33.333%;
 }
