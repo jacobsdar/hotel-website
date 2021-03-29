@@ -100,3 +100,43 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Insert and style images */
+
+/* Style index image main */
+
+.showcase {
+    background: url(/img/showcase.jpg) center/cover;
+    height: 600px;
+}
+
+/* Style history image and set container height */
+
+.history-img {
+    background: url(/img/photo-1.jpg) center/cover;
+    height: 400px;
+}
+
+/* Style About Images */
+
+/* About Image on site is responsive thus percentage should be used in relation to container and set image to block level element */
+
+.about .about-right img {
+    border-radius: 50%;
+    display: block;
+    width: 70%;
+}
+
+/* Testimonials section background image */
+
+.testimonials {
+    height: 600px;
+    background: url(/img/test-bg.jpg) center/cover;
+}
+
+/* Testimonial image to be rounded and set to a static size as they are a set height */
+
+.testimonials .testimonial img {
+    border-radius: 50%;
+    width: 100px;
+}
