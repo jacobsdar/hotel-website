@@ -85,7 +85,9 @@ a {
    - Including: Navbar
                 Footer 
                 3 Floated boxes on index and contact page
-                Buttons */
+                Buttons 
+                Headings
+                Paragraph padding */
 
 /* ------------------------------------------------------------------ */
 
@@ -161,6 +163,7 @@ footer {
 /* Center text */
 
 .info-container {
+    padding: 50px;
     text-align: center;
     width: 33.333%;
 }
@@ -192,6 +195,22 @@ footer {
 }
 
 /* ------------------------------------------------------------------ */
+
+/* Heading padding */
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Paragraph padding */
+
+p {
+    margin: 10px 0;
+}
+
+/* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
 /* Index page styling and content */
@@ -217,7 +236,16 @@ footer {
 .showcase .container h1 {
     font-size: 60px;
     line-height: 1.2em;
-} 
+}
+
+/* Showcase paragraph padding and font color and font size and line-height */
+
+.showcase .container p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
 
 /* Style history image and set container height */
 /* Set width of img container to 50% of container and float to left */
@@ -245,6 +273,20 @@ footer {
     float: right;
     height: 100%;
     width: 50%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+/* Set history paragraph padding bottom */
+
+.history-text p {
+    padding-bottom: 30px;
+}
+
+/* Text Styling for info section */
+
+.home-info {
+    color: #333;
 }
 
 /* ------------------------------------------------------------------ */
