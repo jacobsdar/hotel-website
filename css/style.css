@@ -31,10 +31,13 @@
 }
 
 /* Create viewport container */
+/* Add container overflow due to about section overflowing */
 
 .container {
     max-width: 1100px;
     margin: auto;
+    overflow: auto;
+    padding: 0 20px;
 }
 
 /* Set font family and line height */
@@ -296,30 +299,70 @@ p {
 
 /* ------------------------------------------------------------------ */
 
+/* Set inner padding for about section */
+
+.about {
+    padding: 30px 0;
+}
+
+/* Set About floats and widths */
+
+.about-left {
+    color: #333;
+    float: left;
+    width: 50%;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+}
+
+/* Style About Header */
+
+.container .about-left h1 {
+    padding-top: 20px;
+    font-size: 40px;
+}
 
 /* Style About Images */
 
 /* About Image on site is responsive thus percentage should be used in relation to container and set image to block level element */
+/* Set margin to align image in center */
 
 .about .about-right img {
     border-radius: 50%;
     display: block;
+    margin: auto;
     width: 70%;
 }
 
 /* Testimonials section background image */
+/* Add padding for testimonial section and center and color h1 */
 
 .testimonials {
-    height: 600px;
     background: url(/img/test-bg.jpg) center/cover;
+    height: 600px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 10px;
 }
 
 /* Testimonial info box styling */
+/* Set padding and margin */
 
 .testimonial {
     background: #f7c08a;
     border-radius: 5px;
+    color: #333;
+    margin-bottom: 40px;
     opacity: 0.9;
+    padding: 20px;
 }
 
 /* Testimonial image to be rounded and set to a static size as they are a set height */
@@ -328,19 +371,8 @@ p {
 .testimonials .testimonial img {
     border-radius: 50%;
     float: left;
+    margin-right: 20px;
     width: 100px;
-}
-
-/* Set About floats and widths */
-
-.about-left {
-    float: left;
-    width: 50%;
-}
-
-.about-right {
-    float: right;
-    width: 50%;
 }
 
 /* ------------------------------------------------------------------ */
