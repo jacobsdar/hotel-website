@@ -27,6 +27,7 @@ Hotel Website HTML5 and CSS3 project
 ## Project Status
 
 Development started on 28/03/2021
+Finished project on 31/03/2021
 
 ## Sources
 
